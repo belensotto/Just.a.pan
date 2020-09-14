@@ -1,0 +1,438 @@
+/* estilo */ 
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+$festividad: a ; /* Mi constante */
+body {
+      @if $festividad == navidad {
+                 background-color: rgb(201, 70, 77) ;
+     } @else if $festividad == halloween {
+                background-color: rgb(240, 176, 92) ;
+     } @else {
+                background-color: rgb(248,239,241) ;
+      }
+    }
+
+h1 {
+    padding-top: 40px;
+    color: #24A19C;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size: 80px;
+    display: flex ;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.titulos {
+    color:#24A19C;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+}
+
+.titulares {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main {
+    margin-bottom: 100px;
+}
+
+img {
+    object-fit: cover
+}
+
+/* header */
+
+.header {
+    height: 50px;
+    background-color: rgba(248,239,241,0.7);
+    margin-top: 0;
+}
+
+$festividad: a ; /* Mi constante */
+.header {
+      @if $festividad == navidad {
+                 background-color: rgba(247, 18, 29, 0.7);
+     } @else if $festividad == halloween {
+                background-color: rgba(250, 144, 6, 0.7);
+     } @else {
+                background-color: rgba(248,239,241,0.7);
+      }
+}
+
+
+.navegacion ul {
+    List-style: none;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    li > a {
+    text-decoration: none;   
+    color: #24A19C;
+    }
+}
+
+.logo-menu {
+    padding-left: 20px;
+    display: inline-flex;
+    margin-right: auto;
+}
+.menu {
+    padding: 0px 30px 20px 10px;
+    display: inline-block ;
+}
+
+
+
+
+/* index */
+#bodyIndex {
+    background-image: url(../fotos-justa/Pan-de-cereales.jpg);
+    background-size: cover;
+}
+    .divmain {
+    background-color: rgba(248,239,241,0.4);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Dancing Script', cursive ;
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 60px;
+    margin: 0px 400px 300px 400px;
+    border-radius: 40px;
+    p {
+    align-self: center;
+}   
+    .btn-secondary {
+    background-color: #24A19C !important ;
+    font-size: 20px;
+}
+}
+
+
+/* quienes somos*/
+
+
+$festividad: halloween  !important ; /* Mi constante */
+#bodyQS {
+      @if $festividad == navidad {
+                 background-color: rgb(201, 70, 77) !important;
+     } @else if $festividad == halloween {
+                background-color: rgb(250, 144, 6) !important;
+     } @else {
+                background-color: rgb(248,239,241) !important;
+      }
+}
+
+    .seccionQuienes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    #parrafoQuienes {
+    border: solid 1px black;
+    padding: 20px;
+    margin: 30px 2px 30px 10px;
+    display: inline-block;
+    width: 40%;
+    height: 260px;
+    overflow: hidden;
+    }
+    #fotoQuienes {
+    margin: 30px 10px 20px 2px;
+    width: 40% ;
+    height: 300px ;
+    display: inline-block ;
+    overflow: hidden;
+    .fotoSomos {
+    width: 400px;
+    height: 300px;
+    }
+    }
+    }
+
+
+/* productos */
+
+$festividad:a; /* Mi constante */
+#bodyProductos {
+      @if $festividad == navidad {
+                 background-color: rgb(201, 70, 77) ;
+     } @else if $festividad == halloween {
+                background-color: rgb(240, 176, 92);
+     } @else {
+                background-color: rgb(248,239,241) ;
+      }
+}
+
+#productGrid {
+    margin: 20px 30px 20px 30px;
+    padding: 0px 260px 0px 260px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 300px 300px;
+    grid-row-gap: 50px;
+    img {
+    display: block;
+    height: 300px;
+    width: 400px;
+    }
+
+.descProductos {
+    border: #f0d6e8 ;
+    border-style: ridge;
+    max-width: 400px;
+    justify-content: center;
+   
+}
+
+.descProductos h3 {
+    padding-left: 25px;
+}
+
+.descProductos ul {
+    list-style-type: circle;
+    line-height: 2;
+}
+
+.imagenProductos {
+    overflow: hidden;
+}
+
+.productoBagels {
+    rotate: (270deg);
+}
+}    
+
+
+/* combos */
+
+#bodyCombos {
+    background-color: #f8eff1;
+}
+    #contenedorCombos {
+    margin: 20px 30px 20px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    div {
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
+    span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    h3 {
+    text-align: center;
+    }
+    ul {
+    align-items: center;
+    }
+    }
+    img {
+    height: 300px;
+    width: 200px;
+    display: block;
+    margin: auto;
+    }
+    .listaCombos {
+    list-style-type: disc;
+    }
+    }
+
+
+@media only screen and (max-width: 480px)  {
+	#contenedorCombos {
+            grid-template-columns: 1fr;
+      }
+    }      
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+	#contenedorCombos {
+            grid-template-columns: 1fr 1fr;
+      }
+    }
+
+@media only screen and (min-width: 768px) {
+    #contenedorCombos {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+/* galeria */
+    
+    .gallery {
+        margin: 10px 10px 5px 10px;
+        padding: 20px 50px 20px 50px;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 5vw);
+        grid-gap: 10px;
+        :hover img:not(:hover) {
+            -webkit-filter: grayscale(1);
+                    filter: grayscale(1);
+                  opacity: .75;
+    }
+    }
+
+    figure {
+        margin: 0px;
+    }
+    .gallery__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    
+    .gallery__item--1 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 6;
+    }
+
+    .gallery__item--2 {
+        grid-column-start: 4;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 6;
+    }
+
+    .gallery__item--3 {
+        grid-column-start: 7;
+        grid-column-end: 9;
+        grid-row-start: 1;
+        grid-row-end: 4;
+      }
+      
+      .gallery__item--4 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 6;
+        grid-row-end: 9;
+      }
+      
+      .gallery__item--5 {
+        grid-column-start: 4;
+        grid-column-end: 7;
+        grid-row-start: 6;
+        grid-row-end: 11;
+      }
+      
+      .gallery__item--6 {
+        grid-column-start: 7;
+        grid-column-end: 9;
+        grid-row-start: 6;
+        grid-row-end: 9;
+      }
+
+      .gallery__item--7 {
+        grid-column-start: 7;
+        grid-column-end: 9;
+        grid-row-start: 4;
+        grid-row-end: 6;
+      }
+
+      .gallery__item--8 {
+        grid-column-start: 7;
+        grid-column-end: 9;
+        grid-row-start: 9;
+        grid-row-end: 11;
+      }
+
+      .gallery__item--9 {
+        grid-column-start: 4;
+        grid-column-end: 7;
+        grid-row-start: 11;
+        grid-row-end: 13;
+      }
+
+      .gallery__item--10 {
+        grid-column-start: 7;
+        grid-column-end: 9;
+        grid-row-start: 11;
+        grid-row-end: 13;
+      }
+
+      .gallery__item--11 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 9;
+        grid-row-end: 11;
+      }
+
+      .gallery__item--12 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 11;
+        grid-row-end: 13;
+      }
+
+
+
+/* contacto */
+
+#bodyContacto {
+    background-image: url("../fotos-justa/pan-frutas.jpeg");
+    background-size: cover;
+    }
+    .formularioContacto {
+    background-color: rgba(248,239,241,0.7);
+    margin: 50px 200px 50px 200px;
+    padding: 50px 50px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    }
+    
+
+/* footer*/
+
+.footer {
+    display: flex;
+    background-color: rgba(248,239,241,1);
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    .footerDirec {
+    margin-right: auto;
+    margin: 20px 5px 50px 5px;
+    }
+    .footerRedes {
+    justify-content: flex-end;
+    margin: 20px 20px 20px 20px;
+    }
+    .insta {
+    margin: 10px 20px 10px 20px;
+    width: 25px;
+    height: 25px;
+    }
+    .feis {
+    margin: 10px 20px 10px 20px;
+    width: 25px;
+    height: 25px;
+    }
+    .email {
+    margin: 10px 20px 10px 20px;
+    width: 25px;
+    height: 25px;
+    }
+    }

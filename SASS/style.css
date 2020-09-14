@@ -1,0 +1,529 @@
+/* estilo */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Mi constante */
+body {
+  background-color: #f8eff1;
+}
+
+h1 {
+  padding-top: 40px;
+  color: #24A19C;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.titulos {
+  color: #24A19C;
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px;
+}
+
+.titulares {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main {
+  margin-bottom: 100px;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* header */
+.header {
+  height: 50px;
+  background-color: rgba(248, 239, 241, 0.7);
+  margin-top: 0;
+}
+
+/* Mi constante */
+.header {
+  background-color: rgba(248, 239, 241, 0.7);
+}
+
+.navegacion ul {
+  List-style: none;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-family: 'Dancing Script', cursive;
+  font-size: 25px;
+}
+
+.navegacion ul li > a {
+  text-decoration: none;
+  color: #24A19C;
+}
+
+.logo-menu {
+  padding-left: 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-right: auto;
+}
+
+.menu {
+  padding: 0px 30px 20px 10px;
+  display: inline-block;
+}
+
+/* index */
+#bodyIndex {
+  background-image: url(../fotos-justa/Pan-de-cereales.jpg);
+  background-size: cover;
+}
+
+.divmain {
+  background-color: rgba(248, 239, 241, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+  font-weight: 700;
+  padding-top: 60px;
+  margin: 0px 400px 300px 400px;
+  border-radius: 40px;
+}
+
+.divmain p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.divmain .btn-secondary {
+  background-color: #24A19C !important;
+  font-size: 20px;
+}
+
+/* quienes somos*/
+/* Mi constante */
+#bodyQS {
+  background-color: #f8eff1 !important;
+}
+
+.seccionQuienes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.seccionQuienes #parrafoQuienes {
+  border: solid 1px black;
+  padding: 20px;
+  margin: 30px 2px 30px 10px;
+  display: inline-block;
+  width: 40%;
+  height: 260px;
+  overflow: hidden;
+}
+
+.seccionQuienes #fotoQuienes {
+  margin: 30px 10px 20px 2px;
+  width: 40%;
+  height: 300px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.seccionQuienes #fotoQuienes .fotoSomos {
+  width: 400px;
+  height: 300px;
+}
+
+/* productos */
+/* Mi constante */
+#bodyProductos {
+  background-color: #f8eff1;
+}
+
+#productGrid {
+  margin: 20px 30px 20px 30px;
+  padding: 0px 260px 0px 260px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 2fr;
+      grid-template-columns: 2fr 2fr;
+  -ms-grid-rows: 300px 300px;
+      grid-template-rows: 300px 300px;
+  grid-row-gap: 50px;
+}
+
+#productGrid img {
+  display: block;
+  height: 300px;
+  width: 400px;
+}
+
+#productGrid .descProductos {
+  border: #f0d6e8;
+  border-style: ridge;
+  max-width: 400px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#productGrid .descProductos h3 {
+  padding-left: 25px;
+}
+
+#productGrid .descProductos ul {
+  list-style-type: circle;
+  line-height: 2;
+}
+
+#productGrid .imagenProductos {
+  overflow: hidden;
+}
+
+#productGrid .productoBagels {
+  rotate: 270deg;
+}
+
+/* combos */
+#bodyCombos {
+  background-color: #f8eff1;
+}
+
+#contenedorCombos {
+  margin: 20px 30px 20px 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+#contenedorCombos div {
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#contenedorCombos div span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contenedorCombos div h3 {
+  text-align: center;
+}
+
+#contenedorCombos div ul {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contenedorCombos img {
+  height: 300px;
+  width: 200px;
+  display: block;
+  margin: auto;
+}
+
+#contenedorCombos .listaCombos {
+  list-style-type: disc;
+}
+
+@media only screen and (max-width: 480px) {
+  #contenedorCombos {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  #contenedorCombos {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #contenedorCombos {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* galeria */
+.gallery {
+  margin: 10px 10px 5px 10px;
+  padding: 20px 50px 20px 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  -ms-grid-rows: (5vw)[8];
+      grid-template-rows: repeat(8, 5vw);
+  grid-gap: 10px;
+}
+
+.gallery :hover img:not(:hover) {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  opacity: .75;
+}
+
+figure {
+  margin: 0px;
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery__item--1 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 4;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+.gallery__item--2 {
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  grid-column-end: 7;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+.gallery__item--3 {
+  -ms-grid-column: 7;
+      grid-column-start: 7;
+  grid-column-end: 9;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.gallery__item--4 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 4;
+  -ms-grid-row: 6;
+      grid-row-start: 6;
+  grid-row-end: 9;
+}
+
+.gallery__item--5 {
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  grid-column-end: 7;
+  -ms-grid-row: 6;
+      grid-row-start: 6;
+  grid-row-end: 11;
+}
+
+.gallery__item--6 {
+  -ms-grid-column: 7;
+      grid-column-start: 7;
+  grid-column-end: 9;
+  -ms-grid-row: 6;
+      grid-row-start: 6;
+  grid-row-end: 9;
+}
+
+.gallery__item--7 {
+  -ms-grid-column: 7;
+      grid-column-start: 7;
+  grid-column-end: 9;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  grid-row-end: 6;
+}
+
+.gallery__item--8 {
+  -ms-grid-column: 7;
+      grid-column-start: 7;
+  grid-column-end: 9;
+  -ms-grid-row: 9;
+      grid-row-start: 9;
+  grid-row-end: 11;
+}
+
+.gallery__item--9 {
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  grid-column-end: 7;
+  -ms-grid-row: 11;
+      grid-row-start: 11;
+  grid-row-end: 13;
+}
+
+.gallery__item--10 {
+  -ms-grid-column: 7;
+      grid-column-start: 7;
+  grid-column-end: 9;
+  -ms-grid-row: 11;
+      grid-row-start: 11;
+  grid-row-end: 13;
+}
+
+.gallery__item--11 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 4;
+  -ms-grid-row: 9;
+      grid-row-start: 9;
+  grid-row-end: 11;
+}
+
+.gallery__item--12 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 4;
+  -ms-grid-row: 11;
+      grid-row-start: 11;
+  grid-row-end: 13;
+}
+
+/* contacto */
+#bodyContacto {
+  background-image: url("../fotos-justa/pan-frutas.jpeg");
+  background-size: cover;
+}
+
+.formularioContacto {
+  background-color: rgba(248, 239, 241, 0.7);
+  margin: 50px 200px 50px 200px;
+  padding: 50px 50px 50px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+/* footer*/
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f8eff1;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.footer .footerDirec {
+  margin-right: auto;
+  margin: 20px 5px 50px 5px;
+}
+
+.footer .footerRedes {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 20px 20px 20px 20px;
+}
+
+.footer .insta {
+  margin: 10px 20px 10px 20px;
+  width: 25px;
+  height: 25px;
+}
+
+.footer .feis {
+  margin: 10px 20px 10px 20px;
+  width: 25px;
+  height: 25px;
+}
+
+.footer .email {
+  margin: 10px 20px 10px 20px;
+  width: 25px;
+  height: 25px;
+}
+/*# sourceMappingURL=style.css.map */
